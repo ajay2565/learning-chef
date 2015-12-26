@@ -9,3 +9,4 @@ validation_client_name   "sky_corporation-validator"
 validation_key           "#{current_dir}/sky_corporation-validator.pem"
 chef_server_url          "https://api.chef.io/organizations/sky_corporation"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:editor] = "C:\\Program Files (x86)\\Sublime Text 3\\sublime_text.exe -nosession -multiInst"
