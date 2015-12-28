@@ -8,7 +8,7 @@
   DocumentRoot <%= @document_root %>
   <Directory />
     Options FollowSymLinks
-    AllowOverride None
+    Require all granted
   </Directory>
   <Directory <%= @document_root %>>
     Options Indexes FollowSymLinks MultiViews
