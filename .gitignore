@@ -50,5 +50,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-.chef 
-".chef/knife.rb" 
+
+# Chef
+.chef
+.chef/knife.rb
+
+# Vagrant
+.vagrant
+.vagrant/machines/default/virtualbox/*.ppk
