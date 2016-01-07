@@ -14,6 +14,9 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "base"
   config.vm.box_url="http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.2_chef-provisionerless.box"
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "private_network", ip: "192.168.30.55"
+
   config.vm.provision :chef_client do |chef|
   	chef.chef_server_url = "https://api.chef.io/organizations/sky_corporation"
 	chef.validation_key_path = "./.chef/sky_corporation-validator.pem"
