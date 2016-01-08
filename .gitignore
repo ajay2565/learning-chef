@@ -58,3 +58,6 @@ $RECYCLE.BIN/
 # Vagrant
 .vagrant
 .vagrant/machines/default/virtualbox/*.ppk
+.vagrant/machine/default/*
+.vagrant/machine/*
+.vagrant/*
